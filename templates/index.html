@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL MASTER</title>
+    <style>
+        div{
+            border-radius: 20px;
+            box-shadow: 8px 8px 4px #333333;
+            background-color: #FFD3B0;
+            border: solid #454545 7px;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 20px;
+            padding-bottom: 100px;
+            margin-left: 250px; 
+            margin-right: 250px;
+            margin-top: 250px;
+            margin-bottom: 0px;
+        }
+        body {
+            background-color: #FF6969;
+            color: rgb(33, 223, 244);
+            font-family: georgia, serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            color: #e5cffc;
+            color: #333333;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding-top: 50px;
+            padding: 10px;
+            font-size: 16px;
+            border: solid #454545;
+            box-shadow: 4px 4px 6px   #FFF9DE;
+            border-radius: 14px;
+            background-color: #FFF9DE;
+            color: black;
+            width: 70%;
+            margin-left:0px;
+            margin-right: 5px;
+            margin-top: 30px;
+        }
+        button[type="submit"] {
+            margin-left:7px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: solid #454545 ;
+            border-radius: 14px;
+            box-shadow: 4px 4px 6px #FFF9DE;
+            background-color: white;
+            color: #999999;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #FFF9DE;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #999999;
+        }
+        a {
+            color: #79E0EE;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <center><h1>Accelerate Your Link Experience</h1></center>
+        <p> </p>
+        <form action="/result" method="POST"><p>
+            <input type="text" name="url" placeholder="ENTER URL HERE" required>
+            <button type="submit">Shorten</button>
+        </form>
+        {% if short_url %}
+            <p>Your shortened URL is: <a href="{{ short_url }}">{{ short_url }}</a></p>
+        {% endif %}
+    </div>
+</body>
+</html>
