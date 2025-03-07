@@ -8,7 +8,16 @@ URL Master is a powerful and versatile URL management and optimization tool buil
 - Javascript
 
 
-starting page
+# starting page
+
+
+
 ![Screenshot 2025-03-07 192237](https://github.com/user-attachments/assets/57af6d16-f80d-4f17-a07b-c42e99680b01)
 
 
+
+
+# result page 
+
+
+![Screenshot 2025-03-07 192206](https://github.com/user-attachments/assets/288a91c1-d9b4-4c70-ae3c-36094f36a32e)
